@@ -4,10 +4,10 @@ from collections import Counter
 
 # ==========================================
 # 👇 3단계에서 받은 'xoxp-'로 시작하는 토큰을 넣으세요
-USER_TOKEN = "xoxp-123456789-123456789-abcdefg..." 
+USER_TOKEN = os.get_env('SLACK_TOKEN')
 
 # 👇 4단계에서 찾은 채널 ID를 넣으세요
-TARGET_CHANNEL_ID = "C12345678" 
+TARGET_CHANNEL_ID = os.get_env('CHANNEL_ID')
 # ==========================================
 
 # 클라이언트 초기화
